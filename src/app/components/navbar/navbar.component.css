@@ -20,6 +20,7 @@ nav a{
 }
 nav ul{
     flex-direction: row;
+    justify-content: space-between;
     display: flex;
     padding-left: 100px;
     width: 70%;
