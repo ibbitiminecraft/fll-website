@@ -3,6 +3,7 @@ nav{
     display: flex;
     width: 100vw;
     flex-direction: row;
+    justify-content: center;
 }
 
 nav li{
@@ -21,5 +22,6 @@ nav ul{
     flex-direction: row;
     display: flex;
     padding-left: 100px;
-    width: 100%;
+    width: 70%;
+    justify-content: space-between;
 }
