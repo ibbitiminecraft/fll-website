@@ -1,0 +1,31 @@
+.main{
+    background-color: gainsboro;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 25 25 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}   
+h1{
+    text-align: center;
+    color: #003F87;
+}
+
+p{
+    text-align: center;
+    color: #003F87;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.button{
+    color: white;
+    background-color: #003F87;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}

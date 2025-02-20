@@ -9,7 +9,8 @@ nav{
 nav li{
     color: white;
     list-style: none;
-    padding: 10px;
+    padding: 75px;
+    padding-left: 20px;
 }
 nav a{
     color: white;
@@ -23,6 +24,16 @@ nav ul{
     justify-content: space-between;
     display: flex;
     padding-left: 100px;
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
 }
+img{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+nav a.active {
+    font-weight: bold;
+    color:#D62828;
+    border-bottom: 2px solid #003F87;
+  }
