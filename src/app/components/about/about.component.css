@@ -1,0 +1,20 @@
+.body{
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+
+h1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+p{
+    font-size: large;
+    font-weight: 300;
+}
+p strong b{
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(49, 49, 49);
+}

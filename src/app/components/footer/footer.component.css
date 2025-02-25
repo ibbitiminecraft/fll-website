@@ -1,0 +1,12 @@
+.main{
+    background-color: rgb(67, 67, 67);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
