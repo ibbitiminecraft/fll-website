@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --font-size-heading: 16px;  /* Default font size */
+    --font-size-normal: 16px;  /* Default font size */
+    --font-family: 'Arial, sans-serif';
+  }
+  
+
 body,html{
     padding: 0px;
     margin: 0px;

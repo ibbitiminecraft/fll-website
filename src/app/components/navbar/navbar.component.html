@@ -1,8 +1,13 @@
 <nav>
-    <img src="images/fll-logo.png" />
+  <img src="images/fll-logo.png" />
   <ul>
     <li>
-      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
     </li>
     <li>
       <a routerLink="/about" routerLinkActive="active">About</a>
@@ -19,7 +24,5 @@
     <li>
       <a routerLink="/core-values" routerLinkActive="active">core values</a>
     </li>
-
-    
   </ul>
 </nav>
