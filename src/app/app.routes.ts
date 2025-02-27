@@ -7,4 +7,5 @@ import { MebersComponent } from './components/mebers/mebers.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
+  {path: 'mebers', component: MebersComponent}
 ];
