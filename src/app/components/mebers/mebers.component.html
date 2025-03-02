@@ -1,4 +1,4 @@
-<div class="body">
+<!-- <div class="body">
   <h1>Our Members</h1>
   <div class="members">
     @for (item of teamMembers; track $index) {
@@ -9,10 +9,7 @@
           'background-image': 'url(' + item.img + ')'
         }"
       ></div>
-      <!-- <img
-        src="https://static.vecteezy.com/system/resources/previews/002/214/642/non_2x/web-designer-and-programmer-free-vector.jpg"
-        alt=""
-      /> -->
+      
       <h2 class="main-head">{{ item.Name }}</h2>
       <span
         ><strong class="sub-head"><b>Role: </b></strong>{{ item.Role }}</span
@@ -31,20 +28,32 @@
     </div>
     }
   </div>
-  <!-- <div class="s2">
-        <h2>Ameen Attaras</h2>
-        
+  
+</div> -->
+
+<section class="body">
+  <h1>Our Members</h1>
+  <div class="members">
+    <div *ngFor="let item of teamMembers; let i = index" class="member-box">
+      <div
+        class="bg-overlay"
+        [ngStyle]="{ 'background-image': 'url(' + item.img + ')' }"
+      ></div>
+      <h2 class="main-head">{{ item.Name }}</h2>
+      <span
+        ><strong class="sub-head"><b>Role: </b></strong>{{ item.Role }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Age: </b></strong>{{ item.Age }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Skills: </b></strong
+        >{{ item.Skills }}</span
+      >
+      <span
+        ><strong class="sub-head"><b>Hobbies: </b></strong
+        >{{ item.Hobbies }}</span
+      >
     </div>
-    <div class="s3">
-        <h2>Ameen Erwa</h2>
-    </div>
-    <div class="s4">
-        <h2>Husna Jama</h2>
-    </div>
-    <div class="s5">
-        <h2>Nadirah Shaik</h2>
-    </div>
-    <div class="s6">
-        <h2>Ashika Fathima Mohamed</h2>
-    </div> -->
-</div>
+  </div>
+</section>
