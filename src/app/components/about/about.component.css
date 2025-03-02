@@ -1,4 +1,4 @@
-.body{
+/* .body{
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 40px;
@@ -17,4 +17,47 @@ p strong b{
     font-size: larger;
     font-weight: bolder;
     color: rgb(49, 49, 49);
-}
+} */
+
+.about {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #D62828, #003F87);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .content {
+    max-width: 800px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  p, ul {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }

@@ -7,6 +7,7 @@
 }
 
 .member-box{
+    position: relative;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.116);
@@ -14,14 +15,20 @@
     border-radius: 15px;
     padding: 20px;
     width: 500px;
-    gap:10px
-    /* height:400px; */
+    gap:10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
 
+.member-box:hover{
+    transform: scale(1.05);
 }
 
 .members{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on screen size */
+    
+    grid-template-columns: repeat(2, 1fr);
     /* gap: 1px; */
     justify-content: center; /* Centers the grid */
     width: 100%; /* Prevents stretching */
@@ -35,5 +42,26 @@
     color: #2c3e50;
 }
 
+/* Background overlay (hidden initially) */
+.bg-overlay {
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%; /* Initially hidden */
+    background-size: cover;
+    background-position: center;
+    transform: translateY(100%); /* Start completely hidden */
+    transition: transform  0.5s ease-in-out;
+}
+.member-box span, .member-box h2{
+    z-index: 1;
+}
+/* Reveal effect on hover */
+.member-box:hover .bg-overlay {
+    transform: translateY(0); 
+}
 
 

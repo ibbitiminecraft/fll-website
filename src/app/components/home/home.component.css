@@ -1,4 +1,4 @@
-.main{
+/* .main{
     background-color: gainsboro;
     padding: 20px;
     margin-top: 20px;
@@ -21,11 +21,105 @@ p{
     font-size: 20px;
 }
 .button{
-    color: white;
-    background-color: #003F87;
-    border-radius: 15px;
-    height: 50px;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
+ 
+    position: relative;
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #0ff;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
 }
+.button:hover{
+    transform: scale(1.1);
+            background: linear-gradient(90deg, #ff00cc, #3333ff);
+            box-shadow: 0 0 20px #0ff;
+}
+.button::before{
+    content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+            z-index: -1;
+            border-radius: 50px;
+            filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+} */
+.home {
+    position: relative;
+    text-align: center;
+    padding: 5rem 2rem;
+    overflow: hidden;
+  }
+  .hero {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    background: linear-gradient(to right, #d62828, #003f87);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .background-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+  }
+
+  .button{
+ 
+    position: relative;
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #0ff;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            margin: auto;
+}
+.button:hover{
+    transform: scale(1.1);
+            background: linear-gradient(90deg, #ff00cc, #3333ff);
+            box-shadow: 0 0 20px #0ff;
+}
+.button::before{
+    content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+            z-index: -1;
+            border-radius: 50px;
+            filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+} 
