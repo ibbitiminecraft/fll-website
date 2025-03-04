@@ -1,0 +1,21 @@
+<section class="contact">
+  <h1>Contact Us</h1>
+  <p>Have any questions? Feel free to reach out to us!</p>
+  <form (submit)="onSubmit()">
+    <input type="text" placeholder="Your Name" name="name" required />
+    <input type="email" placeholder="Your Email" name="email" required />
+    <textarea placeholder="Your Message" name="message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-links">
+    <a href="#" class="social-icon">Facebook</a>
+    <a href="#" class="social-icon">Twitter</a>
+    <a href="#" class="social-icon">Instagram</a>
+    <a href="#" class="social-icon">LinkedIn</a>
+  </div>
+</section>
+
+<!-- 
+  [(ngModel)]="contact.name"
+[(ngModel)]="contact.email"
+[(ngModel)]="contact.message" -->
