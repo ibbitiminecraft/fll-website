@@ -1,75 +1,20 @@
-/* .main{
-    background-color: gainsboro;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 25 25 10px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}   
-h1{
-    text-align: center;
-    color: #003F87;
-}
 
-p{
-    text-align: center;
-    color: #003F87;
-    font-weight: bolder;
-    font-size: 20px;
-}
-.button{
- 
-    position: relative;
-            display: inline-block;
-            padding: 12px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: 2px solid #0ff;
-            border-radius: 50px;
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-}
-.button:hover{
-    transform: scale(1.1);
-            background: linear-gradient(90deg, #ff00cc, #3333ff);
-            box-shadow: 0 0 20px #0ff;
-}
-.button::before{
-    content: "";
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
-            z-index: -1;
-            border-radius: 50px;
-            filter: blur(8px);
-            opacity: 0;
-            transition: opacity 0.4s ease-in-out;
-} */
 .home {
     position: relative;
     text-align: center;
     padding: 5rem 2rem;
     overflow: hidden;
     background-color: black;
+    height: 100vh;
+    background: linear-gradient(to right, #d62828, #003f87);
+
   }
   .hero {
     position: relative;
     z-index: 2;
     color: white;
     padding: 3rem;
-    border-radius: 10px;
-    background: linear-gradient(to right, #d62828, #003f87);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* background: linear-gradient(to right, #d62828, #003f87); */
 
   }
   .hero h1 {
